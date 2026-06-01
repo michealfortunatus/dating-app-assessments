@@ -6,9 +6,16 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+
+    "androidStatusBar": {
+      "translucent": true,
+      "backgroundColor": "#00000000"
+    },
+
     "ios": {
       "supportsTablet": true
     },
+
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
@@ -19,12 +26,15 @@
       "predictiveBackGestureEnabled": false,
       "package": "com.devfortuje.datingappassessments_1"
     },
+
     "web": {
       "favicon": "./assets/favicon.png"
     },
+
     "plugins": [
       "expo-image"
     ],
+
     "extra": {
       "eas": {
         "projectId": "a18ca919-c682-4f0e-92ad-0fc6f4a36d94"
