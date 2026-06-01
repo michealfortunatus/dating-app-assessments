@@ -1,5 +1,8 @@
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
-import { COLORS } from "../constants/colors";
+import {
+  TouchableOpacity,
+  Text,
+  StyleSheet,
+} from "react-native";
 
 interface Props {
   title: string;
@@ -14,6 +17,7 @@ export default function AppButton({
     <TouchableOpacity
       style={styles.button}
       onPress={onPress}
+      activeOpacity={0.8}
     >
       <Text style={styles.text}>
         {title}
@@ -24,14 +28,16 @@ export default function AppButton({
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: COLORS.red,
-    paddingVertical: 16,
-    borderRadius: 12,
+    width: "100%",
+    backgroundColor: "#FF4D67",
+    paddingVertical: 18,
+    borderRadius: 14,
     alignItems: "center",
   },
+
   text: {
-    color: COLORS.white,
+    color: "#FFFFFF",
+    fontSize: 18,
     fontWeight: "600",
-    fontSize: 16,
   },
 });
