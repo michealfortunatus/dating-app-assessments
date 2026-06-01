@@ -7,7 +7,8 @@ import {
 } from "@react-navigation/native-stack";
 
 import WelcomeScreen from "../screens/WelcomeScreen";
-
+import DiscoverScreen from "../screens/DiscoverScreen";
+import ProfileDetailsScreen from "../screens/ProfileDetailsScreen";
 
 const Stack =
   createNativeStackNavigator();
@@ -21,7 +22,15 @@ export default function AppNavigator() {
           component={WelcomeScreen}
         />
 
-        
+        <Stack.Screen
+          name="Discover"
+          component={DiscoverScreen}
+        />
+
+        <Stack.Screen
+          name="ProfileDetails"
+          component={ProfileDetailsScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
