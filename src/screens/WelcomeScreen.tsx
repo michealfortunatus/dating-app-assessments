@@ -46,11 +46,13 @@ export default function WelcomeScreen({
         </Text>
 
         <AppButton
-          title="Start Matching"
-          onPress={() =>
-            navigation.navigate("Discover")
-          }
-        />
+         title="Start Matching"
+         onPress={() =>
+         navigation.replace("MainApp", {
+        screen: "Discover",
+    })
+  }
+/>
       </View>
     </View>
   );
@@ -103,7 +105,7 @@ const styles = StyleSheet.create({
 
   text: {
     fontSize: 16,
-    color: "#D1D1D1",
+    color: "#8F8F8F",
     textAlign: "center",
     lineHeight: 24,
     marginBottom: 32,
