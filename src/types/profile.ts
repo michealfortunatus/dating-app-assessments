@@ -3,6 +3,8 @@ export interface Profile {
   name: string;
   age: number;
   bio: string;
-  image: string;
+  images: string[];
   interests: string[];
+  location: string;
+  distance: string;
 }
