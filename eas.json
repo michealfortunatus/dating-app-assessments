@@ -11,8 +11,13 @@
     "preview": {
       "distribution": "internal",
        "android": {
-        "buildType": "apk"
-      }
+        "buildType": "apk",
+         "autoIncrement": true
+      },
+      "androidStatusBar": {
+      "translucent": true,
+      "backgroundColor": "#00000000"
+    }
     },
     "production": {
       "autoIncrement": true
