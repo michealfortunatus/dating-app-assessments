@@ -54,24 +54,39 @@ export default function BottomTabs() {
       })}
     >
       <Tab.Screen
-        name="Discover"
-        component={DiscoverScreen}
-      />
+  name="Discover"
+  component={DiscoverScreen}
+/>
 
-      <Tab.Screen
-        name="Likes"
-        component={LikesScreen}
-      />
+<Tab.Screen
+  name="Likes"
+  component={LikesScreen}
+  listeners={{
+    tabPress: (e) => {
+      e.preventDefault();
+    },
+  }}
+/>
 
-      <Tab.Screen
-        name="Chats"
-        component={ChatsScreen}
-      />
+<Tab.Screen
+  name="Chats"
+  component={ChatsScreen}
+  listeners={{
+    tabPress: (e) => {
+      e.preventDefault();
+    },
+  }}
+/>
 
-      <Tab.Screen
-        name="Profile"
-        component={ProfileScreen}
-      />
+<Tab.Screen
+  name="Profile"
+  component={ProfileScreen}
+  listeners={{
+    tabPress: (e) => {
+      e.preventDefault();
+    },
+  }}
+/>
     </Tab.Navigator>
   );
 }
