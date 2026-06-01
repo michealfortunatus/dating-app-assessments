@@ -2,7 +2,7 @@
 
 ## Overview
 
-Minimalistic Tinder-style dating application.
+Matchly- Minimalistic Tinder-style dating application.
 
 ## Features
 

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "dating-app-assessments",
+    "name": "Matchly",
     "slug": "dating-app-assessments",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,6 +15,11 @@
     "ios": {
       "supportsTablet": true
     },
+    "splash": {
+  "image": "./assets/splash.png",
+  "resizeMode": "contain",
+  "backgroundColor": "#E6F4FE"
+},
 
     "android": {
       "adaptiveIcon": {
