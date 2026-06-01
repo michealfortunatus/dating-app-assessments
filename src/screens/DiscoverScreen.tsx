@@ -12,18 +12,23 @@ export default function DiscoverScreen({
       <Swiper
         cards={profiles}
         renderCard={(card) => (
-          <ProfileCard profile={card} />
-        )}
-        onSwipedRight={(index) =>
-          navigation.navigate(
-            "ProfileDetails",
-            {
-              profile: profiles[index],
+          <ProfileCard
+            profile={card}
+            onOpenProfile={(
+              profile: any
+            ) =>
+              navigation.navigate(
+                "ProfileDetails",
+                { profile }
+              )
             }
-          )
-        }
-        backgroundColor="white"
-        stackSize={3}
+          />
+        )}
+        backgroundColor="#000"
+        stackSize={2}
+        animateCardOpacity
+        disableTopSwipe
+        disableBottomSwipe
       />
     </View>
   );
