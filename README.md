@@ -292,6 +292,6 @@ https://github.com/michealfortunatus/dating-app-assessments
 
 ## Author
 
-Fortunatus Micheal
+Fortunatus Eso
 
 Lead/Senior React Native Developer Assessment Submission
