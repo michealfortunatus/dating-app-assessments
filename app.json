@@ -6,21 +6,18 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-
     "androidStatusBar": {
       "translucent": true,
       "backgroundColor": "#00000000"
     },
-
     "ios": {
       "supportsTablet": true
     },
     "splash": {
-  "image": "./assets/splash.png",
-  "resizeMode": "contain",
-  "backgroundColor": "#E6F4FE"
-},
-
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#E6F4FE"
+    },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
@@ -31,19 +28,17 @@
       "predictiveBackGestureEnabled": false,
       "package": "com.devfortuje.datingappassessments_1"
     },
-
     "web": {
       "favicon": "./assets/favicon.png"
     },
-
     "plugins": [
       "expo-image"
     ],
-
     "extra": {
       "eas": {
-        "projectId": "a18ca919-c682-4f0e-92ad-0fc6f4a36d94"
+        "projectId": "84c28ad8-b6b3-4798-8c2f-7807fc7836de"
       }
-    }
+    },
+    "owner": "kurge"
   }
 }

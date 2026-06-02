@@ -20,9 +20,7 @@ export default function DiscoverScreen({
       <View
         style={styles.emptyContainer}
       >
-        <Text
-          style={styles.title}
-        >
+        <Text style={styles.title}>
           You're all caught up!
         </Text>
 
@@ -34,9 +32,7 @@ export default function DiscoverScreen({
         </Text>
 
         <Text
-          style={
-            styles.smallText
-          }
+          style={styles.smallText}
         >
           Check back later for
           new matches.
@@ -49,11 +45,18 @@ export default function DiscoverScreen({
     <View style={styles.container}>
       <Swiper
         cards={profiles}
-        backgroundColor="#FFFFFF"
+        backgroundColor="#000"
         stackSize={2}
-        animateCardOpacity
+        cardVerticalMargin={0}
+        animateCardOpacity={false}
+        animateOverlayLabelsOpacity={
+          false
+        }
         disableTopSwipe
         disableBottomSwipe
+        verticalSwipe={false}
+        horizontalSwipe={true}
+        swipeBackCard={false}
         renderCard={(card) => {
           if (!card) return null;
 
@@ -100,12 +103,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: 30,
-    backgroundColor: "#fff",
+    backgroundColor: "#000",
   },
 
   title: {
     fontSize: 28,
     fontWeight: "700",
+    color: "#fff",
     textAlign: "center",
   },
 
@@ -113,13 +117,13 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginTop: 12,
     textAlign: "center",
-    color: "#555",
+    color: "#AAA",
   },
 
   smallText: {
     fontSize: 16,
     marginTop: 8,
     textAlign: "center",
-    color: "#888",
+    color: "#777",
   },
 });
